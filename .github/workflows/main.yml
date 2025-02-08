@@ -4,4 +4,20 @@ on: #push,pull_request,create,delete
    push: 
      branches:
         - main
+
+jobs:
+    deployment:
+       runs-on: ubuntu-latest   
+
+    steps:  
+       name: checkout code from github repo
+       uses: actions/checkout@4
+
+       name: run commands
+       run: |
+          whoami
+          ls -al
+          pwd
+          cat index.html
+      
      
