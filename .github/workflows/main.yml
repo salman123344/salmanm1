@@ -1,0 +1,7 @@
+name: salman batch 9 deployment on EC2
+
+on: #push,pull_request,create,delete
+   push: 
+     branches:
+        - main
+     
