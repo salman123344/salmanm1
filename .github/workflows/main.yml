@@ -1,23 +1,21 @@
 name: salman batch 9 deployment on EC2
 
-on: #push,pull_request,create,delete
-   push: 
-     branches:
-        - main
+on:
+  push:
+    branches:
+      - main
 
 jobs:
-    deployment:
-       runs-on: ubuntu-latest   
+  deployment:
+    runs-on: ubuntu-latest   
 
-    step:  
-       name: checkout code from github repo
-       uses: actions/checkout@4
+    steps:
+      - name: Checkout code from GitHub repo
+        uses: actions/checkout@4
 
-       name: run commands
-       run: |
+      - name: Run commands
+        run: |
           whoami
           ls -al
           pwd
           cat index.html
-      
-     
