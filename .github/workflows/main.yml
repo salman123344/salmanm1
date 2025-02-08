@@ -9,7 +9,7 @@ jobs:
     deployment:
        runs-on: ubuntu-latest   
 
-    steps:  
+    step:  
        name: checkout code from github repo
        uses: actions/checkout@4
 
